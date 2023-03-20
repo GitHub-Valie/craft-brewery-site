@@ -1,31 +1,88 @@
-/* CSS Reset */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    height: 100%
-}
-
-body > .hero-image {
-    background-image: url(images/hero-image.jpg);
+body, html, header {
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    filter: blur(1px)
 }
 
-.hero-text {
-    text-align: center;
+body > header > .hero-image::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1px); /* apply the blur */
+    pointer-events: none; /* make the overlay click-through */
+}
+  
+body > header > .hero-image {
     position: relative;
+    height: 100%;
+    background: no-repeat center center;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+body > header > .bg-text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Space Grotesk', sans-serif;
-    font-size: 144px;
+    font-size: 48px;
     color: white;
+}
+
+#schedule {
+    background-color: black;
+}
+
+#schedule > p,
+#about-us > p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    min-height: 20vh;
+}
+
+#about-us {
+    background-color: purple;
+    /* justify-content: center;
+    text-align: center;
+    align-items: center; */
+    /* display: flex; */
+    /* width: 80%; */
+}
+
+#about-us-text {
+    width: 80%;
+}
+
+/* #about-us > p {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: 'Alegreya', serif;
+    font-size: 22px;
+    min-height: 70vh;
+} */
+
+#button-list {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
