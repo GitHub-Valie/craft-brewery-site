@@ -14,27 +14,81 @@
     <body>
 
         <header>
-            <div class="hero-image"></div>
-            <div class="bg-text">
-                <h1>Haze Craze Brewing Co.</h1>
-            </div>
+            <a id="logo">Haze Craze Brewing Co.</a>
         </header>
 
-        <div id="schedule">
-            <p>Open on Thursdays and Friday from 5pm. Saturday from 3pm. Come pay us a visit!</p>
-        </div>
+        <section id="schedule">
+            <h2>Come pay us a visit!</h2>
+            
+            <p>We are open on Thursdays and Friday from 5pm. Now also open on Saturday from 3pm!</p>
+        </section>
 
-        <div id="about-us">
-            <p id="about-us-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <div id="button-list">
-                <button>Shop</button>
-                <button>Brewery tour</button>
-                <button>Book a table</button>
-                <button>Events</button>
-                <button>Jobs</button>
-                <button>Contact</button>
+        <section id="content">
+            <h2>1000 sqm. in the heart of Brussels</h2>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <nav id="button-list">
+
+                <menu>
+
+                    <li class="list-item">
+                        <button class="custom-button">Events</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="custom-button">Book a table</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="custom-button">Brewery tour</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="custom-button">Beer shop</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="custom-button">Jobs</button>
+                    </li>
+                    <li class="list-item">
+                        <button class="custom-button">Contact</button>
+                    </li>
+
+                </menu>
+
+            </nav>
+
+            <form method="post">
+
+                <fieldset>
+                    <legend>First Name</legend>
+                    <input type="text" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Last Name</legend>
+                    <input type="text" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" required>
+                </fieldset>
+                <button class="custom-button">Subscribe</button>
+
+            </form>
+
+        </section>
+
+        <footer>
+            <div>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
             </div>
-        </div>
+            <address>
+                Haze Craze Brewing Co. <br>
+                89 Place de la Madeleine - 75011 Paris
+            </address>
+        </footer>
+
     </body>
+
 </html>
