@@ -43,7 +43,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
     background-color: black;
     min-height: 20%;
@@ -71,8 +71,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    justify-content: center;
+    justify-content: space-around;
 }
 
 #content > * {
@@ -111,6 +110,8 @@ section {
     transition: all .14s ease-out;
     white-space: nowrap;
     min-width: 150px;
+    /* text-transform: uppercase; */
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .custom-button:hover {
@@ -125,6 +126,25 @@ section {
 #content > form {
     display: flex;
     justify-content: space-around;
+    border: 1px solid #000;
+    border-radius: 4px;
+    background-color: greenyellow;
+    padding: 10px
+}
+
+#content > form > fieldset {
+    border: 0px;
+}
+
+#content > form > fieldset > input {
+    border: 0px;
+    border-bottom: 1px solid #000;
+    padding: 8px;
+    background-color: transparent;
+}
+
+#content > form > fieldset > input:focus {
+    outline: none;
 }
 
 /* Footer */
@@ -133,7 +153,7 @@ footer {
     flex-direction: column;
     align-items: center;
 
-    justify-content: center;
+    justify-content: space-around;
     
     min-height: 10%;
     font-family: 'Basteleur';
