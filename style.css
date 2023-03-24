@@ -246,6 +246,12 @@ footer > address {
     }
 }
 
+@media screen and (orientation: landscape) {
+    header > #logo {
+        font-size: 48px;
+    }
+}
+
 @media screen and (max-width:414px) {
 
     #content > form {

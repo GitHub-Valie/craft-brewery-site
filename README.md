@@ -21,6 +21,3 @@ Appelle des éléments d'une colonne de table définie (pas
 compatible sur tous les navigateurs)
 col.selected
 || td
-
-- Gérer le responsiveness des boutons, du formulaire et des polices
-- Adapter l'affichage du site à la taille d'écran avec des media queries
